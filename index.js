@@ -24,11 +24,15 @@ function destructivelyRemoveFirstKitten(){
 }
 
 function appendKitten(name){
-
+  var kitties = kittens;
+  kitties = [...kitties, name];
+  return kitties;
 }
 
 function prependKitten(name){
-
+  var kitties = kittens;
+  kitties = [name, ...kitties];
+  return kitties;
 }
 
 function removeLastKitten(){
